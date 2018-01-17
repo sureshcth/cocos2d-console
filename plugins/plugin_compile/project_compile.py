@@ -469,6 +469,7 @@ class CCPluginCompile(cocos.CCPlugin):
         # Gradle supports NDK build from engine 3.15
         main_ver = engine_version_num[0]
         minor_ver = engine_version_num[1]
+	gradle_support_ndk = False
         if main_ver > 3 or (main_ver == 3 and minor_ver >= 15):
             gradle_support_ndk = True
             
